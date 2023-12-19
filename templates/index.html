@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block main %}
+   <div style="display: flex; justify-content: space-between; align-items: center;">
+       <div style="color: rgb(255, 0, 0); font-weight: bold; margin-right: 20px;">Сайт знакомств</div>
+        <div>
+            <a href="/my_akk" style="color: rgb(0, 0, 0); padding: 5px 10px; border-radius: 5px; margin-right: 10px;">Мой профиль</a>
+         </div>
+         <div>
+            <a href="/poisk" style="color: rgb(0, 0, 0); padding: 5px 10px; border-radius: 5px; margin-right: 10px;">Поиск</a>
+         </div>
+       <div>
+           <a href="/login" style="color: rgb(0, 0, 0); border: 2px solid rgb(255, 0, 0); padding: 5px 10px; border-radius: 5px; margin-right: 10px;">Вход</a>
+        </div>
+        <div>
+           <a href="/registr" style="background-color: rgb(255, 0, 0); color: rgb(0, 0, 0); padding: 5px 10px; border-radius: 5px;">Регистрация</a>
+       </div>
+       <div>
+            <a href="/logout" style="color: rgb(0, 0, 0); border: 2px solid rgb(255, 0, 0); padding: 5px 10px; border-radius: 5px; margin-right: 10px;">Выход</a>
+       </div>
+       <span>{{username}}</span>
+   </div>
+   <p>
+   <div style="text-align: center; color: rgb(190, 16, 16);"> 
+    Добро пожаловать на сайт знакомств! 
+    </div>
+    </p>
+{% endblock %}
