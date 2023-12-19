@@ -21,7 +21,7 @@
 
         <div>
             <select name="gender">
-                <option value="">Выберите ваш пол</option>
+                <option value="">Пол(не ламинат;])</option>
                 <option value="Мужской" {% if user.gender == 'Мужской' %}selected{% endif %}>Мужской</option>
                 <option value="Женский" {% if user.gender == 'Женский' %}selected{% endif %}>Женский</option>
             </select>
@@ -30,7 +30,7 @@
 
         <div>
             <select name="preferred_gender">
-                <option value="">Выберите пол для поиска</option>
+                <option value="">Кого ищем?(пол)</option>
                 <option value="Мужской" {% if user.preferred_gender == 'Мужской' %}selected{% endif %}>Мужской</option>
                 <option value="Женский" {% if user.preferred_gender == 'Женский' %}selected{% endif %}>Женский</option>
             </select>
@@ -39,7 +39,7 @@
 
         <div>
             <textarea name="about" placeholder="О себе">{{ user.about }}</textarea>
-            <label for="about">О себе</label>
+            <label for="about">Пару строк о себе</label>
         </div>
 
         <div>
@@ -51,7 +51,7 @@
 
         <input type="submit" value="Сохранить изменения">
         <p>
-            <a href="/" style="color: rgb(0, 0, 0); border: 2px solid rgb(255, 0, 0); padding: 5px 10px; border-radius: 5px; margin-right: 10px;">Вернуться на главную</a>
+            <a href="/" style="color: rgb(0, 0, 0); border: 2px solid red; padding: 5px 10px; border-radius: 5px; margin-right: 10px;">Вернуться на главную</a>
         </p>
     </form>
 {% endblock %}

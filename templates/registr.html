@@ -30,36 +30,36 @@
 
         <div>
             <select name="gender" required>
-                <option value="">Выберите ваш пол</option>
+                <option value="">Пол</option>
                 <option value="Мужской">Мужской</option>
                 <option value="Женский">Женский</option>
             </select>
-            <label for="gender">Пол</label>
-            {% if error and "Пол" in error %}
+            <label for="gender">Пол(не ламинат;)</label>
+            {% if error and "Пол(не ламинат;)" in error %}
                 <span class="error_message" style="color: red;">{{ error }}</span>
             {% endif %}
         </div>
 
         <div>
             <select name="preferred_gender" required>
-                <option value="">Выберите пол для поиска</option>
+                <option value="">Пол для поиска</option>
                 <option value="Мужской">Мужской</option>
                 <option value="Женский">Женский</option>
             </select>
-            <label for="preferred_gender">Пол для поиска</label>
-            {% if error and "Пол для поиска" in error %}
+            <label for="preferred_gender">Кого ищем?</label>
+            {% if error and "Кого ищем?" in error %}
                 <span class="error_message" style="color: red;">{{ error }}</span>
             {% endif %}
         </div>
 
         <div>
             <textarea name="about" placeholder="О себе"></textarea>
-            <label for="about">О себе</label>
+            <label for="about">Пару слов о себе</label>
         </div>
 
         <div>
             <input type="file" name="photo" accept="image/*">
-            <label for="photo">Фотография</label>
+            <label for="photo">Здесь должна быть лучшая фотография</label>
         </div>
 
         <br>
